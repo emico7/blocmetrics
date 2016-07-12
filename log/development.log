@@ -1,0 +1,24 @@
+Started GET "/" for ::1 at 2016-07-11 15:29:24 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/dodson/.rvm/gems/ruby-2.3.1@blocmetrics/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dodson/.rvm/gems/ruby-2.3.1@blocmetrics/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 21ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-11 17:37:11 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/dodson/.rvm/gems/ruby-2.3.1@blocmetrics/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dodson/.rvm/gems/ruby-2.3.1@blocmetrics/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-11 17:46:43 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/dodson/.rvm/gems/ruby-2.3.1@blocmetrics/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dodson/.rvm/gems/ruby-2.3.1@blocmetrics/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
