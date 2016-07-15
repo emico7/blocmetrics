@@ -1,0 +1,4 @@
+<h3><strong>Site's name</strong><%= @registered_application.name %></h3>
+<h4><strong>Site's URL</strong><%= @registered_application.URL %></h4>
+
+<%= link_to "Delete this site", [current_user, @registered_application], method: :delete, class: 'btn btn-danger', data: {confirm: 'Are you sure you want to delete this site?'} %> 
