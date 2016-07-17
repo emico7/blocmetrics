@@ -15,7 +15,7 @@ class RegisteredApplicationsController < ApplicationController
 
     if @registered_application.save
       flash[:notice] = "Your site was saved successfully."
-      redirect_to [@registered_application]
+      redirect_to [@user, @registered_application]
     else
       flash.now[:alert] = "There was an error. Please try again.."
       render :new
@@ -29,6 +29,7 @@ class RegisteredApplicationsController < ApplicationController
   end
 
   def destroy
+    @user = current_user
     @registered_application = RegisteredApplication.find(params[:id])
 
     if @registered_application.destroy
@@ -43,6 +44,6 @@ class RegisteredApplicationsController < ApplicationController
   private
 
   def registered_application_params
-    params.require(:registered_application).permit(:name, :URL)
+    params.require(:registered_application).permit(:name, :url)
   end
 end
