@@ -11,7 +11,7 @@ RSpec.describe UsersController, type: :controller do
     end
 
     it "returns http success" do
-      get :show, {id: user.id}
+      get :show, params: {id: user.id}
       expect(response).to have_http_status(:success)
     end
   end
