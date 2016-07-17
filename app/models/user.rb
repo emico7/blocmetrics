@@ -12,6 +12,7 @@ class User < ApplicationRecord
 
   validate :validate_username
 
+  has_many :registered_applications
 
   def login=(login)
     @login = login
