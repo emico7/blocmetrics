@@ -4142,3 +4142,2014 @@ Processing by UsersController#show as HTML
   Rendered users/show.html.erb within layouts/application (0.2ms)
 Completed 200 OK in 73ms (Views: 22.4ms | ActiveRecord: 0.2ms)
   [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "maxwell@glover.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Miss Shaniya Renner"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Miss Shaniya Renner"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "maxwell@glover.biz"], ["encrypted_password", "$2a$04$.wPBQ34XksJSdGpP9FbxuON8FvF/jrahXFs2NxUt4QNLyyab2OQwK"], ["confirmation_token", "83jzzR7YzNxQxhEsiBYM"], ["confirmation_sent_at", 2016-07-17 23:40:11 UTC], ["created_at", 2016-07-17 23:40:11 UTC], ["updated_at", 2016-07-17 23:40:11 UTC], ["first_name", "Katrina McLaughlin V"], ["last_name", "Mrs. Tiara Greenholt"], ["username", "Miss Shaniya Renner"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (5.1ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 159.9ms
+Sent mail to maxwell@glover.biz (7.1ms)
+Date: Sun, 17 Jul 2016 17:40:11 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: maxwell@glover.biz
+Message-ID: <578c175b96a79_6a33fd04dc3fa0c10522@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=83jzzR7YzNxQxhEsiBYM">Confirm my account</a></p>
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 34ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nettie.nienow@johnsbogisich.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Demetrius MacGyver"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Demetrius MacGyver"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "nettie.nienow@johnsbogisich.io"], ["encrypted_password", "$2a$04$Gc.uGtak9DWzQ/7NXWCvSujZwzeeUwdjhOTu0NB0S4W/8aiHYSqCG"], ["confirmation_token", "A9FMyQsCF4WMAVcBE5xP"], ["confirmation_sent_at", 2016-07-17 23:40:24 UTC], ["created_at", 2016-07-17 23:40:24 UTC], ["updated_at", 2016-07-17 23:40:24 UTC], ["first_name", "Katharina Bogisich"], ["last_name", "Eldridge Howe"], ["username", "Demetrius MacGyver"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (4.9ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 143.3ms
+Sent mail to nettie.nienow@johnsbogisich.io (6.2ms)
+Date: Sun, 17 Jul 2016 17:40:24 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: nettie.nienow@johnsbogisich.io
+Message-ID: <578c1768956dc_6a63fd54943fa04933b@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=A9FMyQsCF4WMAVcBE5xP">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tatyana Schinner"], ["url", "http://baumbach.co/luther"], ["user_id", 1], ["created_at", 2016-07-17 23:40:24 UTC], ["updated_at", 2016-07-17 23:40:24 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application1"=>{"name"=>"Tatyana Schinner", "url"=>"http://baumbach.co/luther"}, "user_id"=>"1"}
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nettie.nienow@johnsbogisich.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Demetrius MacGyver"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Demetrius MacGyver"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "nettie.nienow@johnsbogisich.io"], ["encrypted_password", "$2a$04$Ye3FQ0NYpNAlPRsp84lNIuF0ML4i3NrDqBUF4MAQ35lvFi3ixPohO"], ["confirmation_token", "W6h_zBcB6jYzS_A-9kmU"], ["confirmation_sent_at", 2016-07-17 23:40:24 UTC], ["created_at", 2016-07-17 23:40:24 UTC], ["updated_at", 2016-07-17 23:40:24 UTC], ["first_name", "Katharina Bogisich"], ["last_name", "Eldridge Howe"], ["username", "Demetrius MacGyver"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to nettie.nienow@johnsbogisich.io (2.5ms)
+Date: Sun, 17 Jul 2016 17:40:24 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: nettie.nienow@johnsbogisich.io
+Message-ID: <578c1768acd48_6a63fd54943fa049452@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=W6h_zBcB6jYzS_A-9kmU">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tatyana Schinner"], ["url", "http://baumbach.co/luther"], ["user_id", 1], ["created_at", 2016-07-17 23:40:24 UTC], ["updated_at", 2016-07-17 23:40:24 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application_id"=>"1", "user_id"=>"1"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nettie.nienow@johnsbogisich.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Demetrius MacGyver"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Demetrius MacGyver"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "nettie.nienow@johnsbogisich.io"], ["encrypted_password", "$2a$04$prGHeCzRdw3oBmAScVHxjOdqOeK1b1YDEXwusRVNfL1nggqThOQcu"], ["confirmation_token", "C_5J32_UuMxTeqh4k1Dk"], ["confirmation_sent_at", 2016-07-17 23:40:24 UTC], ["created_at", 2016-07-17 23:40:24 UTC], ["updated_at", 2016-07-17 23:40:24 UTC], ["first_name", "Katharina Bogisich"], ["last_name", "Eldridge Howe"], ["username", "Demetrius MacGyver"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Sent mail to nettie.nienow@johnsbogisich.io (2.5ms)
+Date: Sun, 17 Jul 2016 17:40:24 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: nettie.nienow@johnsbogisich.io
+Message-ID: <578c1768b5e4a_6a63fd54943fa049598@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=C_5J32_UuMxTeqh4k1Dk">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tatyana Schinner"], ["url", "http://baumbach.co/luther"], ["user_id", 1], ["created_at", 2016-07-17 23:40:24 UTC], ["updated_at", 2016-07-17 23:40:24 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 17ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nettie.nienow@johnsbogisich.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Demetrius MacGyver"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Demetrius MacGyver"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "nettie.nienow@johnsbogisich.io"], ["encrypted_password", "$2a$04$mR3G1yPG1/UkYm5P3tf7WOa/3QTZkbT7r1IXxfZgQcZvloadFDt7K"], ["confirmation_token", "u_7uQymjQKBKbEKVwsiP"], ["confirmation_sent_at", 2016-07-17 23:40:24 UTC], ["created_at", 2016-07-17 23:40:24 UTC], ["updated_at", 2016-07-17 23:40:24 UTC], ["first_name", "Katharina Bogisich"], ["last_name", "Eldridge Howe"], ["username", "Demetrius MacGyver"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Sent mail to nettie.nienow@johnsbogisich.io (3.1ms)
+Date: Sun, 17 Jul 2016 17:40:24 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: nettie.nienow@johnsbogisich.io
+Message-ID: <578c1768bfc3e_6a63fd54943fa049693@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=u_7uQymjQKBKbEKVwsiP">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tatyana Schinner"], ["url", "http://baumbach.co/luther"], ["user_id", 1], ["created_at", 2016-07-17 23:40:24 UTC], ["updated_at", 2016-07-17 23:40:24 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.0ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "caitlyn_adams@croninwyman.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Phoebe Hane"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Phoebe Hane"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "caitlyn_adams@croninwyman.org"], ["encrypted_password", "$2a$04$qWpl5rOFcSguQsqtFD1ye.Iwc85T.3UVlZTgazv1d9n9PtMVj4lqu"], ["confirmation_token", "96nqi-ptF9Y1c7Ncysmc"], ["confirmation_sent_at", 2016-07-18 00:03:02 UTC], ["created_at", 2016-07-18 00:03:02 UTC], ["updated_at", 2016-07-18 00:03:02 UTC], ["first_name", "Jessyca Schuppe"], ["last_name", "Easton Ernser"], ["username", "Phoebe Hane"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (4.8ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 143.7ms
+Sent mail to caitlyn_adams@croninwyman.org (6.9ms)
+Date: Sun, 17 Jul 2016 18:03:03 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: caitlyn_adams@croninwyman.org
+Message-ID: <578c1cb7638bc_6e03fd91e03fa0c2709@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=96nqi-ptF9Y1c7Ncysmc">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Delpha Barrows"], ["url", "http://olson.name/rylan.kub"], ["user_id", 1], ["created_at", 2016-07-18 00:03:03 UTC], ["updated_at", 2016-07-18 00:03:03 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jarvis.veum@mccullough.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Imogene Steuber"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Imogene Steuber"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "jarvis.veum@mccullough.org"], ["encrypted_password", "$2a$04$rGErLl0k8YKMAjV76Nq.6emjb8RvF4DUJ.JRuUR4vwb65kULo0ogu"], ["confirmation_token", "rf9jgDKjGHoWDDfZjKM6"], ["confirmation_sent_at", 2016-07-18 00:03:33 UTC], ["created_at", 2016-07-18 00:03:33 UTC], ["updated_at", 2016-07-18 00:03:33 UTC], ["first_name", "Don Klein I"], ["last_name", "Arnulfo Prohaska"], ["username", "Imogene Steuber"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (4.7ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 142.3ms
+Sent mail to jarvis.veum@mccullough.org (5.8ms)
+Date: Sun, 17 Jul 2016 18:03:34 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: jarvis.veum@mccullough.org
+Message-ID: <578c1cd6f0b4_6e23fe64843f9f439075@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=rf9jgDKjGHoWDDfZjKM6">Confirm my account</a></p>
+
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wilhelmine_ernser@williamson.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Antwon Mitchell III"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Antwon Mitchell III"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "wilhelmine_ernser@williamson.co"], ["encrypted_password", "$2a$04$y0HigUhyy2VXRChVMafgYuVn1kBYr1Nb9YHkkxgzah2MDfZFUC7hC"], ["confirmation_token", "v-KJxnviDqHvNhJy4ivK"], ["confirmation_sent_at", 2016-07-18 00:04:19 UTC], ["created_at", 2016-07-18 00:04:19 UTC], ["updated_at", 2016-07-18 00:04:19 UTC], ["first_name", "Mr. Clemmie Hermann"], ["last_name", "Jadyn Lubowitz II"], ["username", "Antwon Mitchell III"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (4.7ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 142.6ms
+Sent mail to wilhelmine_ernser@williamson.co (6.2ms)
+Date: Sun, 17 Jul 2016 18:04:20 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: wilhelmine_ernser@williamson.co
+Message-ID: <578c1d042d046_6e53fff2c43fa2479744@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=v-KJxnviDqHvNhJy4ivK">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jonas Renner"], ["url", "http://lebsack.io/donald_howe"], ["user_id", 1], ["created_at", 2016-07-18 00:04:20 UTC], ["updated_at", 2016-07-18 00:04:20 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application1"=>{"name"=>"Jonas Renner", "url"=>"http://lebsack.io/donald_howe"}, "user_id"=>"1"}
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wilhelmine_ernser@williamson.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Antwon Mitchell III"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Antwon Mitchell III"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "wilhelmine_ernser@williamson.co"], ["encrypted_password", "$2a$04$t5CNEBfdfS3aS47pG2Vhn.dfo45aMNGNJgm/7k6ILYR2DOXqqZhMS"], ["confirmation_token", "hzWsUy1ctHKmWNnCAEhQ"], ["confirmation_sent_at", 2016-07-18 00:04:20 UTC], ["created_at", 2016-07-18 00:04:20 UTC], ["updated_at", 2016-07-18 00:04:20 UTC], ["first_name", "Mr. Clemmie Hermann"], ["last_name", "Jadyn Lubowitz II"], ["username", "Antwon Mitchell III"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to wilhelmine_ernser@williamson.co (2.7ms)
+Date: Sun, 17 Jul 2016 18:04:20 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: wilhelmine_ernser@williamson.co
+Message-ID: <578c1d044273f_6e53fff2c43fa2479880@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=hzWsUy1ctHKmWNnCAEhQ">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jonas Renner"], ["url", "http://lebsack.io/donald_howe"], ["user_id", 1], ["created_at", 2016-07-18 00:04:20 UTC], ["updated_at", 2016-07-18 00:04:20 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application_id"=>"1", "user_id"=>"1"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wilhelmine_ernser@williamson.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Antwon Mitchell III"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Antwon Mitchell III"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "wilhelmine_ernser@williamson.co"], ["encrypted_password", "$2a$04$AlvwPBOPHUQFo5sSj4iWZeg9eM7VDw9XPu1hU2E.sG76RdwkTSo66"], ["confirmation_token", "_sNaAdutNxCE1Hxx_kwi"], ["confirmation_sent_at", 2016-07-18 00:04:20 UTC], ["created_at", 2016-07-18 00:04:20 UTC], ["updated_at", 2016-07-18 00:04:20 UTC], ["first_name", "Mr. Clemmie Hermann"], ["last_name", "Jadyn Lubowitz II"], ["username", "Antwon Mitchell III"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Sent mail to wilhelmine_ernser@williamson.co (2.5ms)
+Date: Sun, 17 Jul 2016 18:04:20 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: wilhelmine_ernser@williamson.co
+Message-ID: <578c1d0456428_6e53fff2c43fa2479937@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=_sNaAdutNxCE1Hxx_kwi">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jonas Renner"], ["url", "http://lebsack.io/donald_howe"], ["user_id", 1], ["created_at", 2016-07-18 00:04:20 UTC], ["updated_at", 2016-07-18 00:04:20 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 22ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wilhelmine_ernser@williamson.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Antwon Mitchell III"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Antwon Mitchell III"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "wilhelmine_ernser@williamson.co"], ["encrypted_password", "$2a$04$Ykg56.uMOGBUn4tWnGo6Hu2GQYF91QhyGL6iWtioLu7gnvC3fHKn6"], ["confirmation_token", "NWwCtWURkAmhG1Cr7EF3"], ["confirmation_sent_at", 2016-07-18 00:04:20 UTC], ["created_at", 2016-07-18 00:04:20 UTC], ["updated_at", 2016-07-18 00:04:20 UTC], ["first_name", "Mr. Clemmie Hermann"], ["last_name", "Jadyn Lubowitz II"], ["username", "Antwon Mitchell III"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to wilhelmine_ernser@williamson.co (2.4ms)
+Date: Sun, 17 Jul 2016 18:04:20 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: wilhelmine_ernser@williamson.co
+Message-ID: <578c1d0465c15_6e53fff2c43fa248003b@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=NWwCtWURkAmhG1Cr7EF3">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jonas Renner"], ["url", "http://lebsack.io/donald_howe"], ["user_id", 1], ["created_at", 2016-07-18 00:04:20 UTC], ["updated_at", 2016-07-18 00:04:20 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.0ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "edwina@greenfeldermayert.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Jamie Sauer III"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Jamie Sauer III"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "edwina@greenfeldermayert.biz"], ["encrypted_password", "$2a$04$sUjvY6/4ysDr4lcZGo7UA.sLGHIjoBH/DuKVunPCKgdukWSGlCITm"], ["confirmation_token", "zqKbNVs1nERaKMDyXjcN"], ["confirmation_sent_at", 2016-07-18 00:04:44 UTC], ["created_at", 2016-07-18 00:04:44 UTC], ["updated_at", 2016-07-18 00:04:44 UTC], ["first_name", "Mr. Garnett Okuneva"], ["last_name", "Malika Bashirian DVM"], ["username", "Jamie Sauer III"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (4.8ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 145.0ms
+Sent mail to edwina@greenfeldermayert.biz (6.1ms)
+Date: Sun, 17 Jul 2016 18:04:45 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: edwina@greenfeldermayert.biz
+Message-ID: <578c1d1d12314_6e73fccde03f9f462a4@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=zqKbNVs1nERaKMDyXjcN">Confirm my account</a></p>
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["encrypted_password", "$2a$04$u8z5.KJjPO76KFiWaicQquftIriBZtdTs0evATLwcZFpRqO3EZt9."], ["confirmation_token", "w2mTqSgy5o4qezrvZ3zy"], ["confirmation_sent_at", 2016-07-18 00:06:38 UTC], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC], ["first_name", "Miss Noah West"], ["last_name", "Claudia Greenholt"], ["username", "Domenica Smith Sr."]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (5.6ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 144.1ms
+Sent mail to chyna.hintz@hauckmarvin.com (5.8ms)
+Date: Sun, 17 Jul 2016 18:06:38 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: chyna.hintz@hauckmarvin.com
+Message-ID: <578c1d8ea1dfa_6f03ff2ad83fa242234@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=w2mTqSgy5o4qezrvZ3zy">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vada Welch"], ["url", "http://schmelerbosco.io/allan"], ["user_id", 1], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application1"=>{"name"=>"Vada Welch", "url"=>"http://schmelerbosco.io/allan"}, "user_id"=>"1"}
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["encrypted_password", "$2a$04$bSZhTCplLEHUjT9yLeHux.cBjmRpqycNL2KbTOYkJEoI0g97YhVRa"], ["confirmation_token", "jnds6VYxByCuG3K3wuHp"], ["confirmation_sent_at", 2016-07-18 00:06:38 UTC], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC], ["first_name", "Miss Noah West"], ["last_name", "Claudia Greenholt"], ["username", "Domenica Smith Sr."]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.7ms
+Sent mail to chyna.hintz@hauckmarvin.com (2.4ms)
+Date: Sun, 17 Jul 2016 18:06:38 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: chyna.hintz@hauckmarvin.com
+Message-ID: <578c1d8eac113_6f03ff2ad83fa2422433@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=jnds6VYxByCuG3K3wuHp">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vada Welch"], ["url", "http://schmelerbosco.io/allan"], ["user_id", 1], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application_id"=>"1", "user_id"=>"1"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["encrypted_password", "$2a$04$8yGVpmn5YX1fL2iVQIpuRO0Qk9LXRrRVlECTL3eynjATQa4uQHit2"], ["confirmation_token", "eH4Qkg_CBeW5zAEY44m5"], ["confirmation_sent_at", 2016-07-18 00:06:38 UTC], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC], ["first_name", "Miss Noah West"], ["last_name", "Claudia Greenholt"], ["username", "Domenica Smith Sr."]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.7ms
+Sent mail to chyna.hintz@hauckmarvin.com (2.1ms)
+Date: Sun, 17 Jul 2016 18:06:38 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: chyna.hintz@hauckmarvin.com
+Message-ID: <578c1d8eb2d95_6f03ff2ad83fa24225fa@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=eH4Qkg_CBeW5zAEY44m5">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vada Welch"], ["url", "http://schmelerbosco.io/allan"], ["user_id", 1], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["encrypted_password", "$2a$04$aQ7Hlr8HlqiSnYSX1iqOT.VY7jVWqNcawBp1.9BUkq7bV5Bwptg8e"], ["confirmation_token", "55vUP6Ug5zne8rXWbrJz"], ["confirmation_sent_at", 2016-07-18 00:06:38 UTC], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC], ["first_name", "Miss Noah West"], ["last_name", "Claudia Greenholt"], ["username", "Domenica Smith Sr."]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Sent mail to chyna.hintz@hauckmarvin.com (2.1ms)
+Date: Sun, 17 Jul 2016 18:06:38 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: chyna.hintz@hauckmarvin.com
+Message-ID: <578c1d8eb9b59_6f03ff2ad83fa2422670@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=55vUP6Ug5zne8rXWbrJz">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vada Welch"], ["url", "http://schmelerbosco.io/allan"], ["user_id", 1], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["encrypted_password", "$2a$04$axvuRZEo5L6PGxid.ujpiemP0GRQzomqRvmXu6js9An59pLp6JPeC"], ["confirmation_token", "y7E1AkDpwnDhEh4y7UuF"], ["confirmation_sent_at", 2016-07-18 00:06:38 UTC], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC], ["first_name", "Miss Noah West"], ["last_name", "Claudia Greenholt"], ["username", "Domenica Smith Sr."]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to chyna.hintz@hauckmarvin.com (2.6ms)
+Date: Sun, 17 Jul 2016 18:06:38 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: chyna.hintz@hauckmarvin.com
+Message-ID: <578c1d8ebe82b_6f03ff2ad83fa24227de@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=y7E1AkDpwnDhEh4y7UuF">Confirm my account</a></p>
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by WelcomeController#about as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["encrypted_password", "$2a$04$b8cCrt1TL/QY/Y0U1ohBj.4YOD3ZrlpQUoVFUKfYiPCL1bnHmngfW"], ["confirmation_token", "z4HVNDR2s-6j4PSM8y8P"], ["confirmation_sent_at", 2016-07-18 00:06:38 UTC], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC], ["first_name", "Miss Noah West"], ["last_name", "Claudia Greenholt"], ["username", "Domenica Smith Sr."]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.7ms
+Sent mail to chyna.hintz@hauckmarvin.com (2.1ms)
+Date: Sun, 17 Jul 2016 18:06:38 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: chyna.hintz@hauckmarvin.com
+Message-ID: <578c1d8ed0ac5_6f03ff2ad83fa24228e1@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=z4HVNDR2s-6j4PSM8y8P">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vada Welch"], ["url", "http://schmelerbosco.io/allan"], ["user_id", 1], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Domenica Smith Sr."], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "chyna.hintz@hauckmarvin.com"], ["encrypted_password", "$2a$04$v7thNff4bxGQpzWtLQT8R.1mLduZewD5V7RfQ7mgE/5D0rq8upQj6"], ["confirmation_token", "BJwz5pCynrURMLWoMgNR"], ["confirmation_sent_at", 2016-07-18 00:06:38 UTC], ["created_at", 2016-07-18 00:06:38 UTC], ["updated_at", 2016-07-18 00:06:38 UTC], ["first_name", "Miss Noah West"], ["last_name", "Claudia Greenholt"], ["username", "Domenica Smith Sr."]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Sent mail to chyna.hintz@hauckmarvin.com (2.6ms)
+Date: Sun, 17 Jul 2016 18:06:38 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: chyna.hintz@hauckmarvin.com
+Message-ID: <578c1d8ed4ea4_6f03ff2ad83fa24229c5@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=BJwz5pCynrURMLWoMgNR">Confirm my account</a></p>
+
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ryley.stracke@farrell.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ryley.stracke@farrell.biz"], ["encrypted_password", "$2a$04$IFLh1OlqsAf/3U2FA4BwQ.HmlZxidZap/0e.SitX6pfdVRgVR5L/i"], ["confirmation_token", "gu49NGJdFd5KP2ooVe1_"], ["confirmation_sent_at", 2016-07-18 00:08:27 UTC], ["created_at", 2016-07-18 00:08:27 UTC], ["updated_at", 2016-07-18 00:08:27 UTC], ["first_name", "Benedict Crona"], ["last_name", "Genevieve Cremin"], ["username", "Kylie Pouros"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (5.1ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 141.5ms
+Sent mail to ryley.stracke@farrell.biz (6.2ms)
+Date: Sun, 17 Jul 2016 18:08:28 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: ryley.stracke@farrell.biz
+Message-ID: <578c1dfc3c850_6f93fd8e483fa0c505f8@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=gu49NGJdFd5KP2ooVe1_">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kenton Goldner"], ["url", "http://trantow.io/rodolfo_thompson"], ["user_id", 1], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application1"=>{"name"=>"Kenton Goldner", "url"=>"http://trantow.io/rodolfo_thompson"}, "user_id"=>"1"}
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ryley.stracke@farrell.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ryley.stracke@farrell.biz"], ["encrypted_password", "$2a$04$Ur.HWM3Pg3VN8xEDFU9s2uaLyDpG/9UBzoDqowHLnn9sIJmRZL2xe"], ["confirmation_token", "YjhzjbE6thZTyXDtiuaz"], ["confirmation_sent_at", 2016-07-18 00:08:28 UTC], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC], ["first_name", "Benedict Crona"], ["last_name", "Genevieve Cremin"], ["username", "Kylie Pouros"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to ryley.stracke@farrell.biz (2.5ms)
+Date: Sun, 17 Jul 2016 18:08:28 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: ryley.stracke@farrell.biz
+Message-ID: <578c1dfc466e1_6f93fd8e483fa0c506c4@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=YjhzjbE6thZTyXDtiuaz">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kenton Goldner"], ["url", "http://trantow.io/rodolfo_thompson"], ["user_id", 1], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application_id"=>"1", "user_id"=>"1"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ryley.stracke@farrell.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ryley.stracke@farrell.biz"], ["encrypted_password", "$2a$04$..p4gomEVARbR/Ku9Qk7N.T6qyL3xNMXBnECvfvHPZawPnFbL3rdO"], ["confirmation_token", "kAxyeJ_qeyC-fc_FRixc"], ["confirmation_sent_at", 2016-07-18 00:08:28 UTC], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC], ["first_name", "Benedict Crona"], ["last_name", "Genevieve Cremin"], ["username", "Kylie Pouros"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.5ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.1ms
+Sent mail to ryley.stracke@farrell.biz (2.2ms)
+Date: Sun, 17 Jul 2016 18:08:28 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: ryley.stracke@farrell.biz
+Message-ID: <578c1dfc4d397_6f93fd8e483fa0c50747@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=kAxyeJ_qeyC-fc_FRixc">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kenton Goldner"], ["url", "http://trantow.io/rodolfo_thompson"], ["user_id", 1], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ryley.stracke@farrell.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ryley.stracke@farrell.biz"], ["encrypted_password", "$2a$04$RcoISWiNaPd.d0j2HhvylupebI6ME2oyYN9QDPmW3NlOcVE2NrNl6"], ["confirmation_token", "zuXzgT7Y3iKFZWpxohc3"], ["confirmation_sent_at", 2016-07-18 00:08:28 UTC], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC], ["first_name", "Benedict Crona"], ["last_name", "Genevieve Cremin"], ["username", "Kylie Pouros"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.4ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.1ms
+Sent mail to ryley.stracke@farrell.biz (2.2ms)
+Date: Sun, 17 Jul 2016 18:08:28 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: ryley.stracke@farrell.biz
+Message-ID: <578c1dfc5428f_6f93fd8e483fa0c5084a@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=zuXzgT7Y3iKFZWpxohc3">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kenton Goldner"], ["url", "http://trantow.io/rodolfo_thompson"], ["user_id", 1], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.0ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ryley.stracke@farrell.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ryley.stracke@farrell.biz"], ["encrypted_password", "$2a$04$qu5i0ibdq7xDnAXJbfmQGu7puyybEuYJbSFJ7.XpAJebQXht0bjmC"], ["confirmation_token", "8rh1PFqAJv4nf_CBozgY"], ["confirmation_sent_at", 2016-07-18 00:08:28 UTC], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC], ["first_name", "Benedict Crona"], ["last_name", "Genevieve Cremin"], ["username", "Kylie Pouros"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to ryley.stracke@farrell.biz (2.5ms)
+Date: Sun, 17 Jul 2016 18:08:28 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: ryley.stracke@farrell.biz
+Message-ID: <578c1dfc59236_6f93fd8e483fa0c509cb@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=8rh1PFqAJv4nf_CBozgY">Confirm my account</a></p>
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ryley.stracke@farrell.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ryley.stracke@farrell.biz"], ["encrypted_password", "$2a$04$T5ryTLj8ryJl7Tp8dRGpGusLSvn/wXrg6e.Lb7cHjuaHMg0To9mTO"], ["confirmation_token", "i9q-8fg3YM9biY_yozvH"], ["confirmation_sent_at", 2016-07-18 00:08:28 UTC], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC], ["first_name", "Benedict Crona"], ["last_name", "Genevieve Cremin"], ["username", "Kylie Pouros"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.9ms
+Sent mail to ryley.stracke@farrell.biz (2.2ms)
+Date: Sun, 17 Jul 2016 18:08:28 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: ryley.stracke@farrell.biz
+Message-ID: <578c1dfc60335_6f93fd8e483fa0c5102f@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=i9q-8fg3YM9biY_yozvH">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kenton Goldner"], ["url", "http://trantow.io/rodolfo_thompson"], ["user_id", 1], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ryley.stracke@farrell.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Kylie Pouros"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ryley.stracke@farrell.biz"], ["encrypted_password", "$2a$04$7FllUN7Z1eEIorx2ktLw1OjxPyfUHtUtfU4pjPmSPxFKU1KGozlRm"], ["confirmation_token", "ozUyNMKQ9DPCUNF97uLL"], ["confirmation_sent_at", 2016-07-18 00:08:28 UTC], ["created_at", 2016-07-18 00:08:28 UTC], ["updated_at", 2016-07-18 00:08:28 UTC], ["first_name", "Benedict Crona"], ["last_name", "Genevieve Cremin"], ["username", "Kylie Pouros"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.7ms
+Sent mail to ryley.stracke@farrell.biz (2.5ms)
+Date: Sun, 17 Jul 2016 18:08:28 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: ryley.stracke@farrell.biz
+Message-ID: <578c1dfc64667_6f93fd8e483fa0c51111@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=ozUyNMKQ9DPCUNF97uLL">Confirm my account</a></p>
+
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "montana_hettinger@schoen.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "montana_hettinger@schoen.io"], ["encrypted_password", "$2a$04$3ETb9lZH36zV48MKon9Th.7CwjDmARG0u1nOXXKYvLpzZ9iQivgWq"], ["confirmation_token", "SfpWKAg64S8n-sVyc7uF"], ["confirmation_sent_at", 2016-07-18 00:10:10 UTC], ["created_at", 2016-07-18 00:10:10 UTC], ["updated_at", 2016-07-18 00:10:10 UTC], ["first_name", "Annabell Kunze"], ["last_name", "Kaylah Collins"], ["username", "Terrell Nicolas"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (5.2ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 142.3ms
+Sent mail to montana_hettinger@schoen.io (6.0ms)
+Date: Sun, 17 Jul 2016 18:10:10 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: montana_hettinger@schoen.io
+Message-ID: <578c1e62f21b3_7023fef6203fa0c46321@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=SfpWKAg64S8n-sVyc7uF">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ferne Kulas"], ["url", "http://miller.com/rocio"], ["user_id", 1], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application1"=>{"name"=>"Ferne Kulas", "url"=>"http://miller.com/rocio"}, "user_id"=>"1"}
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "montana_hettinger@schoen.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "montana_hettinger@schoen.io"], ["encrypted_password", "$2a$04$EOSaaNX6zi1RX9IIgDPsGeBvu/3RbnN7i0719XdecHWF67uyQ8adG"], ["confirmation_token", "DHXYxsGNYWbDzWUYjUZx"], ["confirmation_sent_at", 2016-07-18 00:10:11 UTC], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC], ["first_name", "Annabell Kunze"], ["last_name", "Kaylah Collins"], ["username", "Terrell Nicolas"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to montana_hettinger@schoen.io (2.9ms)
+Date: Sun, 17 Jul 2016 18:10:11 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: montana_hettinger@schoen.io
+Message-ID: <578c1e6384f8_7023fef6203fa0c464dd@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=DHXYxsGNYWbDzWUYjUZx">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ferne Kulas"], ["url", "http://miller.com/rocio"], ["user_id", 1], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application_id"=>"1", "user_id"=>"1"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "montana_hettinger@schoen.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "montana_hettinger@schoen.io"], ["encrypted_password", "$2a$04$KRc4x7R.6xK.LL9b7Y/MO.wll0Hn1upZtIOFWpQvQKIJ1.r3dl6Au"], ["confirmation_token", "aA8nVnF6rSwk92CMLmHj"], ["confirmation_sent_at", 2016-07-18 00:10:11 UTC], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC], ["first_name", "Annabell Kunze"], ["last_name", "Kaylah Collins"], ["username", "Terrell Nicolas"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.0ms
+Sent mail to montana_hettinger@schoen.io (2.1ms)
+Date: Sun, 17 Jul 2016 18:10:11 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: montana_hettinger@schoen.io
+Message-ID: <578c1e63f0f7_7023fef6203fa0c465f2@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=aA8nVnF6rSwk92CMLmHj">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ferne Kulas"], ["url", "http://miller.com/rocio"], ["user_id", 1], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "montana_hettinger@schoen.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "montana_hettinger@schoen.io"], ["encrypted_password", "$2a$04$HZJHoLoEwyzOytb4AQaCOONLRm0WbboL59WUWy0FmFUN.LfQEEcBu"], ["confirmation_token", "WR6CN8AxNQhy9Zsyng3T"], ["confirmation_sent_at", 2016-07-18 00:10:11 UTC], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC], ["first_name", "Annabell Kunze"], ["last_name", "Kaylah Collins"], ["username", "Terrell Nicolas"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to montana_hettinger@schoen.io (2.2ms)
+Date: Sun, 17 Jul 2016 18:10:11 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: montana_hettinger@schoen.io
+Message-ID: <578c1e6315d49_7023fef6203fa0c46630@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=WR6CN8AxNQhy9Zsyng3T">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ferne Kulas"], ["url", "http://miller.com/rocio"], ["user_id", 1], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.0ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "montana_hettinger@schoen.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "montana_hettinger@schoen.io"], ["encrypted_password", "$2a$04$wS/b6UfsavEwtDQQqY6p3eYkSbCj/UJt0ATwkDk0dwf4Jyaj1VsmO"], ["confirmation_token", "YX1LYQ8spH8iUqaeX6FB"], ["confirmation_sent_at", 2016-07-18 00:10:11 UTC], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC], ["first_name", "Annabell Kunze"], ["last_name", "Kaylah Collins"], ["username", "Terrell Nicolas"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to montana_hettinger@schoen.io (2.4ms)
+Date: Sun, 17 Jul 2016 18:10:11 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: montana_hettinger@schoen.io
+Message-ID: <578c1e631aa6d_7023fef6203fa0c46711@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=YX1LYQ8spH8iUqaeX6FB">Confirm my account</a></p>
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "montana_hettinger@schoen.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "montana_hettinger@schoen.io"], ["encrypted_password", "$2a$04$6fpEexYWRhHEa99.rPL19.xfCGg/tkWID0mTvQ3HrtXIWmPpDso5i"], ["confirmation_token", "YDRXHtszMUoFU673qzZh"], ["confirmation_sent_at", 2016-07-18 00:10:11 UTC], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC], ["first_name", "Annabell Kunze"], ["last_name", "Kaylah Collins"], ["username", "Terrell Nicolas"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to montana_hettinger@schoen.io (2.5ms)
+Date: Sun, 17 Jul 2016 18:10:11 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: montana_hettinger@schoen.io
+Message-ID: <578c1e6320dd7_7023fef6203fa0c4687b@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=YDRXHtszMUoFU673qzZh">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ferne Kulas"], ["url", "http://miller.com/rocio"], ["user_id", 1], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "montana_hettinger@schoen.io"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Terrell Nicolas"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "montana_hettinger@schoen.io"], ["encrypted_password", "$2a$04$dOQ1s5MiSxyIWAUUlwtuE.n70973kK2WDIYhr8cvmEFQeBKXgo7p."], ["confirmation_token", "MJNyZWBdzVu883R12pgx"], ["confirmation_sent_at", 2016-07-18 00:10:11 UTC], ["created_at", 2016-07-18 00:10:11 UTC], ["updated_at", 2016-07-18 00:10:11 UTC], ["first_name", "Annabell Kunze"], ["last_name", "Kaylah Collins"], ["username", "Terrell Nicolas"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.4ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.2ms
+Sent mail to montana_hettinger@schoen.io (2.2ms)
+Date: Sun, 17 Jul 2016 18:10:11 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: montana_hettinger@schoen.io
+Message-ID: <578c1e63251eb_7023fef6203fa0c469cc@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=MJNyZWBdzVu883R12pgx">Confirm my account</a></p>
+
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "demario@sauer.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "demario@sauer.biz"], ["encrypted_password", "$2a$04$uE9cPyYnCZw/9tQmbyQV/OmBDyKRDLczky.8FTQGPF48gJoGNYz6y"], ["confirmation_token", "zyqXvzEdKmaM5mJ2jTzq"], ["confirmation_sent_at", 2016-07-18 00:10:26 UTC], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC], ["first_name", "Trycia Ankunding"], ["last_name", "Dr. Aleen Mann"], ["username", "Juwan Ernser PhD"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (4.9ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 142.9ms
+Sent mail to demario@sauer.biz (6.1ms)
+Date: Sun, 17 Jul 2016 18:10:26 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: demario@sauer.biz
+Message-ID: <578c1e72aa274_7063ff5d8c3fa2469326@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=zyqXvzEdKmaM5mJ2jTzq">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Colleen Armstrong"], ["url", "http://howellsauer.com/annalise"], ["user_id", 1], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application1"=>{"name"=>"Mr. Colleen Armstrong", "url"=>"http://howellsauer.com/annalise"}, "user_id"=>"1"}
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "demario@sauer.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "demario@sauer.biz"], ["encrypted_password", "$2a$04$kaK0G0G/Bi5UM/8E0er.2.fHO7r3VnaV3r/RFggolBRcYojKOuqEC"], ["confirmation_token", "-A_cnjnfV_MCk8Yqsnzh"], ["confirmation_sent_at", 2016-07-18 00:10:26 UTC], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC], ["first_name", "Trycia Ankunding"], ["last_name", "Dr. Aleen Mann"], ["username", "Juwan Ernser PhD"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.9ms
+Sent mail to demario@sauer.biz (2.3ms)
+Date: Sun, 17 Jul 2016 18:10:26 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: demario@sauer.biz
+Message-ID: <578c1e72b4800_7063ff5d8c3fa2469452@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=-A_cnjnfV_MCk8Yqsnzh">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Colleen Armstrong"], ["url", "http://howellsauer.com/annalise"], ["user_id", 1], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application_id"=>"1", "user_id"=>"1"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "demario@sauer.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "demario@sauer.biz"], ["encrypted_password", "$2a$04$Q8rss0C7iwhLPWC7NJ9h/eU6emGWnjOHsQfPzPTRodx2F3dMtcuMe"], ["confirmation_token", "YA3NDntsmr4_ndqCSsPZ"], ["confirmation_sent_at", 2016-07-18 00:10:26 UTC], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC], ["first_name", "Trycia Ankunding"], ["last_name", "Dr. Aleen Mann"], ["username", "Juwan Ernser PhD"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.2ms
+Sent mail to demario@sauer.biz (2.1ms)
+Date: Sun, 17 Jul 2016 18:10:26 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: demario@sauer.biz
+Message-ID: <578c1e72bb003_7063ff5d8c3fa24695b3@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=YA3NDntsmr4_ndqCSsPZ">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Colleen Armstrong"], ["url", "http://howellsauer.com/annalise"], ["user_id", 1], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "demario@sauer.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "demario@sauer.biz"], ["encrypted_password", "$2a$04$vqyBlmgwZj3znv0hrCuSA.ipLMEWrpQ.IOfUkhmtzgPZ4SA367gHG"], ["confirmation_token", "6nFwJyD38YTSy1tYEXZ7"], ["confirmation_sent_at", 2016-07-18 00:10:26 UTC], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC], ["first_name", "Trycia Ankunding"], ["last_name", "Dr. Aleen Mann"], ["username", "Juwan Ernser PhD"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Sent mail to demario@sauer.biz (2.1ms)
+Date: Sun, 17 Jul 2016 18:10:26 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: demario@sauer.biz
+Message-ID: <578c1e72c1bd6_7063ff5d8c3fa24696a9@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=6nFwJyD38YTSy1tYEXZ7">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Colleen Armstrong"], ["url", "http://howellsauer.com/annalise"], ["user_id", 1], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.0ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "demario@sauer.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "demario@sauer.biz"], ["encrypted_password", "$2a$04$xtd.MyXYLn2qk6q4fQMS8OGYciXmDoqsE9tvSH8ymoQwH8atLG1.W"], ["confirmation_token", "G1cz_L3jYmz6QhFKygpP"], ["confirmation_sent_at", 2016-07-18 00:10:26 UTC], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC], ["first_name", "Trycia Ankunding"], ["last_name", "Dr. Aleen Mann"], ["username", "Juwan Ernser PhD"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to demario@sauer.biz (2.5ms)
+Date: Sun, 17 Jul 2016 18:10:26 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: demario@sauer.biz
+Message-ID: <578c1e72c68d3_7063ff5d8c3fa24697b9@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=G1cz_L3jYmz6QhFKygpP">Confirm my account</a></p>
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "demario@sauer.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "demario@sauer.biz"], ["encrypted_password", "$2a$04$BQ/pjvNViHXT0Gb5l51PY.BHqRV9cFR44pMO4LQwCBa0dZ9Y2/HoC"], ["confirmation_token", "so13FtmQ7SPXkVcxFyz8"], ["confirmation_sent_at", 2016-07-18 00:10:26 UTC], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC], ["first_name", "Trycia Ankunding"], ["last_name", "Dr. Aleen Mann"], ["username", "Juwan Ernser PhD"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.4ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.1ms
+Sent mail to demario@sauer.biz (2.3ms)
+Date: Sun, 17 Jul 2016 18:10:26 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: demario@sauer.biz
+Message-ID: <578c1e72cd2c0_7063ff5d8c3fa246983c@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=so13FtmQ7SPXkVcxFyz8">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Colleen Armstrong"], ["url", "http://howellsauer.com/annalise"], ["user_id", 1], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "demario@sauer.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Juwan Ernser PhD"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "demario@sauer.biz"], ["encrypted_password", "$2a$04$L2Kl.r3Batnmye1OK8SGLu8UkVBVEgAdyQouQwxNNjASckcAZKk9S"], ["confirmation_token", "3-gtxtqWMwMUAbd7k2Ma"], ["confirmation_sent_at", 2016-07-18 00:10:26 UTC], ["created_at", 2016-07-18 00:10:26 UTC], ["updated_at", 2016-07-18 00:10:26 UTC], ["first_name", "Trycia Ankunding"], ["last_name", "Dr. Aleen Mann"], ["username", "Juwan Ernser PhD"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.8ms
+Sent mail to demario@sauer.biz (2.2ms)
+Date: Sun, 17 Jul 2016 18:10:26 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: demario@sauer.biz
+Message-ID: <578c1e72d1be8_7063ff5d8c3fa246994a@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=3-gtxtqWMwMUAbd7k2Ma">Confirm my account</a></p>
+
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raegan.emmerich@weinat.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "raegan.emmerich@weinat.co"], ["encrypted_password", "$2a$04$wvoFv2fB4jxM1fB/S703.eHHNOusnL3g8OLin/mT8IljnV4hamJdq"], ["confirmation_token", "iihEG5kZJX_XK69qs6sx"], ["confirmation_sent_at", 2016-07-18 00:10:41 UTC], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC], ["first_name", "Major Schuster II"], ["last_name", "Elva Walsh DDS"], ["username", "Edmund Smitham"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (4.9ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 142.7ms
+Sent mail to raegan.emmerich@weinat.co (6.6ms)
+Date: Sun, 17 Jul 2016 18:10:41 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: raegan.emmerich@weinat.co
+Message-ID: <578c1e81cc455_7093fdd4203fa0c873f7@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=iihEG5kZJX_XK69qs6sx">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dedric Pagac"], ["url", "http://torphybartoletti.co/estefania"], ["user_id", 1], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application1"=>{"name"=>"Dedric Pagac", "url"=>"http://torphybartoletti.co/estefania"}, "user_id"=>"1"}
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raegan.emmerich@weinat.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "raegan.emmerich@weinat.co"], ["encrypted_password", "$2a$04$7voUE/x1StP5GlA.1i4VyO7W8d3WjNq6uPwS0yQ7bwbV/mE9c2cOC"], ["confirmation_token", "w983rhGf4TExzyPMoSsn"], ["confirmation_sent_at", 2016-07-18 00:10:41 UTC], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC], ["first_name", "Major Schuster II"], ["last_name", "Elva Walsh DDS"], ["username", "Edmund Smitham"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Sent mail to raegan.emmerich@weinat.co (2.6ms)
+Date: Sun, 17 Jul 2016 18:10:41 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: raegan.emmerich@weinat.co
+Message-ID: <578c1e81d62fe_7093fdd4203fa0c87430@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=w983rhGf4TExzyPMoSsn">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dedric Pagac"], ["url", "http://torphybartoletti.co/estefania"], ["user_id", 1], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application_id"=>"1", "user_id"=>"1"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raegan.emmerich@weinat.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "raegan.emmerich@weinat.co"], ["encrypted_password", "$2a$04$kSlkng3JMzgk3SqUm9nDY.qPKFDEOIXcBBKZohC0wmYLOI/tQ6sw6"], ["confirmation_token", "oM_6mFxKK_sz47JDAWVg"], ["confirmation_sent_at", 2016-07-18 00:10:41 UTC], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC], ["first_name", "Major Schuster II"], ["last_name", "Elva Walsh DDS"], ["username", "Edmund Smitham"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.4ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.2ms
+Sent mail to raegan.emmerich@weinat.co (2.1ms)
+Date: Sun, 17 Jul 2016 18:10:41 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: raegan.emmerich@weinat.co
+Message-ID: <578c1e81dcd68_7093fdd4203fa0c875a6@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=oM_6mFxKK_sz47JDAWVg">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dedric Pagac"], ["url", "http://torphybartoletti.co/estefania"], ["user_id", 1], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raegan.emmerich@weinat.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "raegan.emmerich@weinat.co"], ["encrypted_password", "$2a$04$uQXq9jZ2vWXdfWGb9OOut.RRypPbJl1CSXaKKBXFT7dHQXSFg/MJ6"], ["confirmation_token", "P6dy8roNdJiw2szpb6ma"], ["confirmation_sent_at", 2016-07-18 00:10:41 UTC], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC], ["first_name", "Major Schuster II"], ["last_name", "Elva Walsh DDS"], ["username", "Edmund Smitham"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Sent mail to raegan.emmerich@weinat.co (2.1ms)
+Date: Sun, 17 Jul 2016 18:10:41 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: raegan.emmerich@weinat.co
+Message-ID: <578c1e81e3974_7093fdd4203fa0c87672@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=P6dy8roNdJiw2szpb6ma">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dedric Pagac"], ["url", "http://torphybartoletti.co/estefania"], ["user_id", 1], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raegan.emmerich@weinat.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "raegan.emmerich@weinat.co"], ["encrypted_password", "$2a$04$ztNYIr3MbLNE0z4qhb.4S.Xdr/3/V6W9k5C6hygTSXyyWph3SxryC"], ["confirmation_token", "sV5WKKS1yJ47k9oJEUNc"], ["confirmation_sent_at", 2016-07-18 00:10:41 UTC], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC], ["first_name", "Major Schuster II"], ["last_name", "Elva Walsh DDS"], ["username", "Edmund Smitham"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to raegan.emmerich@weinat.co (2.5ms)
+Date: Sun, 17 Jul 2016 18:10:41 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: raegan.emmerich@weinat.co
+Message-ID: <578c1e81e88f3_7093fdd4203fa0c8779@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=sV5WKKS1yJ47k9oJEUNc">Confirm my account</a></p>
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raegan.emmerich@weinat.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "raegan.emmerich@weinat.co"], ["encrypted_password", "$2a$04$wrUmBh3a0A4PqxY8CeRjaeSkLGcz9YpNhaEsxtFjiZRubXv6M4lcq"], ["confirmation_token", "sAF8acyiP5dwy8rLe2Kk"], ["confirmation_sent_at", 2016-07-18 00:10:41 UTC], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC], ["first_name", "Major Schuster II"], ["last_name", "Elva Walsh DDS"], ["username", "Edmund Smitham"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Sent mail to raegan.emmerich@weinat.co (2.4ms)
+Date: Sun, 17 Jul 2016 18:10:41 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: raegan.emmerich@weinat.co
+Message-ID: <578c1e81eec6d_7093fdd4203fa0c8780@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=sAF8acyiP5dwy8rLe2Kk">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dedric Pagac"], ["url", "http://torphybartoletti.co/estefania"], ["user_id", 1], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raegan.emmerich@weinat.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Edmund Smitham"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "raegan.emmerich@weinat.co"], ["encrypted_password", "$2a$04$TM66H515JBBaqAMQLulDce3loGTbPArHdCFvdJd7o7hixk66Ys/Hi"], ["confirmation_token", "4_Qz1KUjC1YTykv6zJsQ"], ["confirmation_sent_at", 2016-07-18 00:10:41 UTC], ["created_at", 2016-07-18 00:10:41 UTC], ["updated_at", 2016-07-18 00:10:41 UTC], ["first_name", "Major Schuster II"], ["last_name", "Elva Walsh DDS"], ["username", "Edmund Smitham"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.0ms
+Sent mail to raegan.emmerich@weinat.co (2.1ms)
+Date: Sun, 17 Jul 2016 18:10:41 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: raegan.emmerich@weinat.co
+Message-ID: <578c1e81f3620_7093fdd4203fa0c8797c@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=4_Qz1KUjC1YTykv6zJsQ">Confirm my account</a></p>
+
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "percival.kozey@collier.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "percival.kozey@collier.name"], ["encrypted_password", "$2a$04$IEYS2eTlZMNnOqwOJ2hCCOZjKA6SDjw1tQTIfSV.spi1ZWih93up6"], ["confirmation_token", "Jbxe4gtdmUCzLqYVs52Q"], ["confirmation_sent_at", 2016-07-18 00:11:03 UTC], ["created_at", 2016-07-18 00:11:03 UTC], ["updated_at", 2016-07-18 00:11:03 UTC], ["first_name", "Johnpaul Will"], ["last_name", "Junior Collier PhD"], ["username", "Freda Harvey"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (4.8ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 142.8ms
+Sent mail to percival.kozey@collier.name (5.8ms)
+Date: Sun, 17 Jul 2016 18:11:04 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: percival.kozey@collier.name
+Message-ID: <578c1e981af15_70c3fe05083fa0c8292c@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Jbxe4gtdmUCzLqYVs52Q">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Karine Carter"], ["url", "http://zemlak.com/savion"], ["user_id", 1], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application1"=>{"name"=>"Karine Carter", "url"=>"http://zemlak.com/savion"}, "user_id"=>"1"}
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications"[0m
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "percival.kozey@collier.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "percival.kozey@collier.name"], ["encrypted_password", "$2a$04$AXu1a7zkre05Hf4FamJy3OVVOcsYd07az8FfTBobyS3x413DUjSQ2"], ["confirmation_token", "tHAyhky4PxMfgNxPeyxH"], ["confirmation_sent_at", 2016-07-18 00:11:04 UTC], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC], ["first_name", "Johnpaul Will"], ["last_name", "Junior Collier PhD"], ["username", "Freda Harvey"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to percival.kozey@collier.name (2.5ms)
+Date: Sun, 17 Jul 2016 18:11:04 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: percival.kozey@collier.name
+Message-ID: <578c1e9824d6e_70c3fe05083fa0c8302@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=tHAyhky4PxMfgNxPeyxH">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Karine Carter"], ["url", "http://zemlak.com/savion"], ["user_id", 1], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#create as HTML
+  Parameters: {"registered_application_id"=>"1", "user_id"=>"1"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "percival.kozey@collier.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "percival.kozey@collier.name"], ["encrypted_password", "$2a$04$9/VW8L1./AvhEsWbRXMGOO2anCIpqz8/9AUCBgd2G4P6VWDZQldF."], ["confirmation_token", "ZHW3mwJUom7KnCdsNRN4"], ["confirmation_sent_at", 2016-07-18 00:11:04 UTC], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC], ["first_name", "Johnpaul Will"], ["last_name", "Junior Collier PhD"], ["username", "Freda Harvey"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.5ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.1ms
+Sent mail to percival.kozey@collier.name (2.2ms)
+Date: Sun, 17 Jul 2016 18:11:04 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: percival.kozey@collier.name
+Message-ID: <578c1e982bb1e_70c3fe05083fa0c83156@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=ZHW3mwJUom7KnCdsNRN4">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Karine Carter"], ["url", "http://zemlak.com/savion"], ["user_id", 1], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.1ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "percival.kozey@collier.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "percival.kozey@collier.name"], ["encrypted_password", "$2a$04$CDLz8xT.y/XNPAnapga0ru6BPLy3swR1zcbdsifgARegnIIMtQ7i2"], ["confirmation_token", "y9LLg3n13fsHBKpwMiy8"], ["confirmation_sent_at", 2016-07-18 00:11:04 UTC], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC], ["first_name", "Johnpaul Will"], ["last_name", "Junior Collier PhD"], ["username", "Freda Harvey"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to percival.kozey@collier.name (2.1ms)
+Date: Sun, 17 Jul 2016 18:11:04 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: percival.kozey@collier.name
+Message-ID: <578c1e9832a52_70c3fe05083fa0c832ed@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=y9LLg3n13fsHBKpwMiy8">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Karine Carter"], ["url", "http://zemlak.com/savion"], ["user_id", 1], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RegisteredApplicationsController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mRegisteredApplication Load (0.0ms)[0m  [1m[34mSELECT  "registered_applications".* FROM "registered_applications" WHERE "registered_applications"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "registered_applications" WHERE "registered_applications"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "percival.kozey@collier.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "percival.kozey@collier.name"], ["encrypted_password", "$2a$04$xdmd8cB8LpLGbr.Y5m8HKeXP77kM6ib.xK50J4TQPqM.ej.yZEsVG"], ["confirmation_token", "RzntMmuY-7W-5r9TSvz1"], ["confirmation_sent_at", 2016-07-18 00:11:04 UTC], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC], ["first_name", "Johnpaul Will"], ["last_name", "Junior Collier PhD"], ["username", "Freda Harvey"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to percival.kozey@collier.name (2.7ms)
+Date: Sun, 17 Jul 2016 18:11:04 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: percival.kozey@collier.name
+Message-ID: <578c1e98379b8_70c3fe05083fa0c83310@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=RzntMmuY-7W-5r9TSvz1">Confirm my account</a></p>
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "percival.kozey@collier.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "percival.kozey@collier.name"], ["encrypted_password", "$2a$04$e8tOyTV.F1lyiSnlcHB3W.KCFB39Nh.RQdcg8FU5ibp0W.0zs3C4q"], ["confirmation_token", "4tgepXpivD9x3zo7gi1F"], ["confirmation_sent_at", 2016-07-18 00:11:04 UTC], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC], ["first_name", "Johnpaul Will"], ["last_name", "Junior Collier PhD"], ["username", "Freda Harvey"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.6ms
+Sent mail to percival.kozey@collier.name (2.6ms)
+Date: Sun, 17 Jul 2016 18:11:04 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: percival.kozey@collier.name
+Message-ID: <578c1e983dc17_70c3fe05083fa0c834fd@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=4tgepXpivD9x3zo7gi1F">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "registered_applications" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Karine Carter"], ["url", "http://zemlak.com/savion"], ["user_id", 1], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "percival.kozey@collier.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Freda Harvey"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "percival.kozey@collier.name"], ["encrypted_password", "$2a$04$J1OzKxfuQbGL1KHz8WCMfuxJ9vO/fKo5tfig7Ps26i/KBWrjVlEJO"], ["confirmation_token", "c1WCnUbtnzaQr9u8_8zi"], ["confirmation_sent_at", 2016-07-18 00:11:04 UTC], ["created_at", 2016-07-18 00:11:04 UTC], ["updated_at", 2016-07-18 00:11:04 UTC], ["first_name", "Johnpaul Will"], ["last_name", "Junior Collier PhD"], ["username", "Freda Harvey"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering users/mailer/confirmation_instructions.html.erb
+  Rendered users/mailer/confirmation_instructions.html.erb (0.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.7ms
+Sent mail to percival.kozey@collier.name (2.6ms)
+Date: Sun, 17 Jul 2016 18:11:04 -0600
+From: emicoding@gmail.com
+Reply-To: emicoding@gmail.com
+To: percival.kozey@collier.name
+Message-ID: <578c1e984219a_70c3fe05083fa0c8352a@Dodsons-Mac-mini.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=c1WCnUbtnzaQr9u8_8zi">Confirm my account</a></p>
+
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
