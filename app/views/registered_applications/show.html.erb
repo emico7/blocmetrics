@@ -6,6 +6,7 @@
           <thead>
             <tr>
               <th>Site</th>
+              <th>Event Count </th>
               <th>URL</th>
             </tr>
           </thead>
@@ -13,11 +14,13 @@
           <tbody>
             <tr class="site-list">
               <td><%= @registered_application.name %></td>
+              <td><%= @registered_application.events.count %></td>
               <td><%= @registered_application.url %></td>
               <td><%= link_to "Delete this site", [@registered_application.user, @registered_application], method: :delete, class: 'btn btn-danger', data: {confirm: 'Are you sure you want to delete this site?'} %></td>
             </tr>
           </tbody>
         </table>
+
         <%= link_to "See the list of your sites", user_path %>
       </div>
     </div>
