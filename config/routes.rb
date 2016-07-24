@@ -6,11 +6,9 @@ Rails.application.routes.draw do
   end
 
   resources :registered_applications, only: [] do
+    match '/events', to: 'events#preflight', via: [:options]
     resources :events, only: [:show]
   end
-
-  match '/events', to: 'events#preflight', via: [:options]
-  resources :events, only: [:create]
 
   get 'about' => 'welcome#about'
 

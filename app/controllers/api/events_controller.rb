@@ -19,7 +19,7 @@ class API::EventsController < ApplicationController
       event.save!
       render json: @event, status: :created
     else
-      render json: "Unregistered application", status: :unprocessable_entity
+      render json: {errors: @event.errors}, status: :unprocessable_entity
     end
   end
 
