@@ -34,7 +34,6 @@ class RegisteredApplicationsController < ApplicationController
     @user = current_user
     @registered_application = RegisteredApplication.find(params[:id])
 
-    binding.pry
     if @registered_application.destroy
       flash[:notice] = "\"#{@registered_application.name}\" was deleted successfully."
       redirect_to [@user]
