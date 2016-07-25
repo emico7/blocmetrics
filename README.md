@@ -23,7 +23,7 @@ In order to start tracking your website, sign up first for Blocmetrics, then reg
 
 After you have registered your site at Blocmetrics, it's time to add a JavaScript snippet to your site. please follow the steps below to start tracking the activities.
 
-- [] Open your `application.js` file, and add the following code:
+1. Open your `application.js` file, and add the following code:
 
 ```
 var blocmetrics = {};
@@ -37,7 +37,7 @@ var blocmetrics = {};
   }
 ```
 
-- [] Add the following code inside the pages of the site, which you desire to keep track of. Place this code on the bottom. This example has the event name "About Page View". Please feel free to choose a name best describes the page you are placing this code:
+2. Add the following code inside the pages of the site, which you desire to keep track of. Place this code on the bottom. This example has the event name "About Page View". Please feel free to choose a name best describes the page you are placing this code:
 
 ```
 <script type="text/javascript">
