@@ -59,3 +59,4 @@ gem 'figaro', '1.0'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 gem 'devise'
+gem "chartkick"
