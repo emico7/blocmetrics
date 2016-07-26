@@ -1,21 +1,8 @@
 # README
 
-* Ruby version - 5.0
+* Ruby version - 2.3.1
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+* Rails version - 5.0
 
 ##Blocmetrics: an analytics service which tracks events on registered websites.
 
@@ -23,7 +10,7 @@ In order to start tracking your website, sign up first for Blocmetrics, then reg
 
 After you have registered your site at Blocmetrics, it's time to add a JavaScript snippet to your site. please follow the steps below to start tracking the activities.
 
-1. Open your `application.js` file, and add the following code:
+1 Open your `application.js` file, and add the following code:
 
 ```
 var blocmetrics = {};
@@ -37,7 +24,7 @@ var blocmetrics = {};
   }
 ```
 
-2. Add the following code inside the pages of the site, which you desire to keep track of. Place this code on the bottom. This example has the event name "About Page View". Please feel free to choose a name best describes the page you are placing this code:
+2 Add the following code inside the pages which you desire to keep track of. Place this code on the bottom. This example has the event name "About Page View". Please feel free to choose a name that best describes the page you are placing this code:
 
 ```
 <script type="text/javascript">
@@ -47,4 +34,4 @@ var blocmetrics = {};
 </script>
 ```
 
-That's it. Now you can go back to Blocmetrics and see the events count change as your site gets viewed by a user.
+That's it. Now you can go back to Blocmetrics and see the events count change as your site gets viewed.
