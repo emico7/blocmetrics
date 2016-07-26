@@ -30,6 +30,7 @@ class RegisteredApplicationsController < ApplicationController
   end
 
   def destroy
+
     @user = current_user
     @registered_application = RegisteredApplication.find(params[:id])
 
