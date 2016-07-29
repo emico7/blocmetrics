@@ -17,8 +17,39 @@
 
         <div class="col-md-4">
           <%= link_to "Register a new site", new_user_registered_application_path(@user), class: 'btn btn-success' %>
+          <br/>
+          <br/>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="col-md-10">
+  <p>After you have registered your site at Blocmetrics, please add a JavaScript snippet below to the site, so you can start tracking the activities. Here is what you need to do:</p>
+  <ol>
+    <li>Open the application.js file of the site, and add the following code:</li>
+  <br/>
+    <pre><code>
+    var blocmetrics = {};
+      blocmetrics.report = function(eventName){
+
+      var event = {event: { name: eventName }};
+      var request = new XMLHttpRequest();
+      request.open("POST", "http://localhost:3000/api/events", true);
+      request.setRequestHeader('Content-Type', 'application/json');
+      request.send(JSON.stringify(event));
+    }
+    </code></pre>
+    <li>Add the following code inside the pages which you desire to keep track of. Place this code on the bottom. This example has the event name "About Page View". Please feel free to choose a name that best describes the page you are placing this code:</li>
+  <br/>
+    <pre><code>
+      &lt;script type="text/javascript"&gt;
+       $(document).on("ready page:load", function () {
+          blocmetrics.report("About Page View");
+        })
+      &lt;/script&gt;
+    </code></pre>
+  </ol>
+  <br/>
 </div>

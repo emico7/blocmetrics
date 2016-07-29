@@ -6,7 +6,7 @@
           <thead>
             <tr>
               <th>Site</th>
-              <th>Event Count </th>
+              <th>Event Count</th>
               <th>URL</th>
             </tr>
           </thead>
@@ -20,6 +20,15 @@
             </tr>
           </tbody>
         </table>
+
+        <!-- <%= javascript_include_tag "https://www.google.com/jsapi", "chartkick" %> -->
+        <div class="col-md-12">
+          <h2><%= @registered_application.name %>
+          <p><%= link_to @registered_application.url %></p>
+
+          <%= pie_chart @registered_application.events.group(:name).count %>
+          <%= line_chart @registered_application.events.group_by_day(:created_at, dates: true).count, xtitle: "Date", ytitle: "Views" %>
+        </div>
 
         <%= link_to "See the list of your sites", user_path %>
       </div>

@@ -54,6 +54,7 @@ GEM
     bootswatch-rails (3.3.5)
       railties (>= 3.1)
     builder (3.2.2)
+    chartkick (2.0.0)
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -87,6 +88,8 @@ GEM
       thor (~> 0.14)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    groupdate (3.0.1)
+      activesupport (>= 3)
     i18n (0.7.0)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -234,12 +237,14 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   bootswatch-rails
+  chartkick
   coffee-rails (~> 4.2)
   database_cleaner
   devise
   factory_girl_rails
   faker
   figaro (= 1.0)
+  groupdate
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
