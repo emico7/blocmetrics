@@ -34,4 +34,4 @@ var blocmetrics = {};
 </script>
 ```
 
-That's it. Now you can go back to Blocmetrics and see the events count change as your site gets viewed.
+That's it. Now you can go back to Blocmetrics and see the event counts change as your site gets viewed.
